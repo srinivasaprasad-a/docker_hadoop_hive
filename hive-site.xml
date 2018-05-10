@@ -1,0 +1,54 @@
+<configuration>
+	<property>
+		<name>javax.jdo.option.ConnectionURL</name>
+		<value>jdbc:derby://hadoop-master:1527/metastore_db;create=true </value>
+		<description>JDBC connect string for a JDBC metastore </description>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionDriverName</name>
+		<value>org.apache.derby.jdbc.ClientDriver</value>
+		<description>Driver class name for a JDBC metastore</description>
+	</property>
+	<property>
+		<name>hive.metastore.schema.verification</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>hive.server2.transport.mode</name>
+		<value>http</value>
+		<description>Expects one of [binary, http]. Transport mode of HiveServer2.</description>
+	</property>
+	<property>
+		<name>hive.server2.thrift.bind.host</name>
+		<value/>
+		<description>Bind host on which to run the HiveServer2 Thrift service.</description>
+	</property>
+	<property>
+		<name>hive.server2.thrift.http.port</name>
+		<value>10000</value>
+		<description>Port number of HiveServer2 Thrift interface when hive.server2.transport.mode is 'http'.</description>
+	</property>
+	<property>
+		<name>hive.server2.thrift.http.path</name>
+		<value>cliservice</value>
+		<description>Path component of URL endpoint when in HTTP mode.</description>
+	</property>
+	<property>
+		<name>hive.server2.thrift.min.worker.threads</name>
+		<value>5</value>
+		<description>Minimum number of Thrift worker threads</description>
+	</property>
+	<property>
+		<name>hive.server2.thrift.max.worker.threads</name>
+		<value>500</value>
+		<description>Maximum number of Thrift worker threads</description>
+	</property>
+	<property>
+		<name>hive.server2.enable.impersonation</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>hive.server2.authentication</name>
+		<value>NONE</value>
+	</property>
+</configuration>
