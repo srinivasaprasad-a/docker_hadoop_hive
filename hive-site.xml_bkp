@@ -11,7 +11,12 @@
 	</property>
 	<property>
 		<name>hive.metastore.schema.verification</name>
-		<value>true</value>
+		<value>false</value>
+	</property>
+	<property>
+		<name>hive.metastore.uris</name>
+		<value>thrift://172.21.0.2:10000</value>
+		<description>Thrift URI for the remote metastore. Used by metastore client to connect to remote metastore.</description>
 	</property>
 	<property>
 		<name>hive.server2.transport.mode</name>
@@ -20,7 +25,7 @@
 	</property>
 	<property>
 		<name>hive.server2.thrift.bind.host</name>
-		<value>hadoop-master</value>
+		<value>172.21.0.2</value>
 		<description>Bind host on which to run the HiveServer2 Thrift service.</description>
 	</property>
 	<property>

@@ -41,4 +41,6 @@ ADD start_up.sh /etc/start_up.sh
 RUN chown root:root /etc/start_up.sh && \
     chmod 700 /etc/start_up.sh
 
+EXPOSE 10000 10001 1527 9083
+
 CMD ["/etc/start_up.sh", "-d"]

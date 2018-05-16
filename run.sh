@@ -14,7 +14,9 @@ sudo docker run -itd \
                 -p 50070:50070 \
 		-p 50090:50090 \
 		-p 10000:10000 \
+		-p 10001:10001 \
 		-p 1527:1527 \
+		-p 9083:9083 \
 		--net=hadoop-hive-network \
                 --name hadoop-hive \
                 --hostname hadoop-master \
